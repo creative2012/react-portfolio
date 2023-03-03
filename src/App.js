@@ -12,6 +12,7 @@ class App extends Component {
       opacity: 0,
     }
   };
+  
 
   componentDidMount() {
     let navAndFooterIn = {
@@ -19,16 +20,35 @@ class App extends Component {
         opacity: 1,
       }
     }
-   
+
+
+    let location = this.getBaseUrl()
+    //check if user has loaded first time into the landing page - if so play delayed fade animation for nav and footer
+    if(window.location.href == location){
     setTimeout(() => {
       Object.keys(navAndFooterIn).forEach(key => {
         this.setState({
           [key]: navAndFooterIn[key]
         })
       })
-    }, 3000)
+    }, 3000);
+  }
+  //if user loaded first time directly to another page just show nav and footer straight away
+  else {
+    this.setState({
+      navAndFooterStyle: {
+        opacity: 1,
+      }
+    })
+
+  }
+
   };
 
+  getBaseUrl() {
+    var re = new RegExp(/^.*\//);
+    return re.exec(window.location.href);
+}
 
 
   render() {

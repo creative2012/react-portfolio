@@ -1,18 +1,34 @@
 import React, { Component } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 import './style.css';
-
 const animateHeight = {
     initial:{height: 0},
     animate: {height: 50 + '%'}
 
 }
 
-function LandingPage(props) {
+class LandingPage extends Component{
 
+        rotate(event) {
+            let midpoint = window.innerWidth / 2;
+            let midpoint2 = window.innerHeight / 2;
+            let pos = event.clientX - midpoint;
+            let pos2 = event.clientY - midpoint2;
+            let val = (pos / midpoint) * 2;
+            let val2 = (pos2 / midpoint2) * 5;
+            document.getElementById('lp_welcomeText').style.transform = "perspective(550px) rotateY(" + val + "deg) rotateX(" + val2 + "deg)";
+        }
+        componentDidMount(){
+            document.addEventListener("mousemove", this.rotate, false);
+            
+        }
+        componentWillUnmount() {
+            document.removeEventListener("mousemove", this.rotate, false);
+        }
 
+        render(){
         return (
-
+            
             <div key="landingPage" id="landingPageContainer">
                 
                 <motion.div 
@@ -107,6 +123,7 @@ function LandingPage(props) {
             </div>
 
         )
+    }
 }
 
 

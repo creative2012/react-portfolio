@@ -18,8 +18,28 @@ function Header(props) {
             </NavLink>
  
         <ul>
-          <li id="projects">Projects</li>
-          <li id="current"></li>
+          <li id="projects">
+          <NavLink
+            to="/projects"
+            end
+            className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            Projects
+          </NavLink>
+          </li>
+          <li id="current">
+          <NavLink
+            to="/contact"
+            end
+            className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            Contact
+          </NavLink>
+          </li>
           <li id="about">
           <NavLink
               to="/about"
