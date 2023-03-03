@@ -1,0 +1,136 @@
+
+/* landing page */
+#lp_one,
+#lp_two,
+#lp_three,
+#lp_four,
+#lp_five,
+#lp_six,
+#lp_seven,
+#lp_eight,
+#lp_nine,
+#lp_ten {
+   position: absolute;
+   height: 0%;
+   width: var(--b);
+   background-color: #b30c15;
+}
+
+#lp_one {
+    top: 0;
+}
+
+#lp_two {
+    bottom: 0;
+}
+
+#lp_three {
+    top: 0;
+    left: 20%;
+
+}
+
+#lp_four {
+    bottom: 0;
+    left: 20%;
+}
+
+#lp_five {
+    top: 0;
+    left: 40%;
+}
+
+#lp_six {
+    bottom: 0;
+    left: 40%;
+}
+
+#lp_seven {
+    top: 0;
+    left: 60%;
+}
+
+#lp_eight {
+    bottom: 0;
+    left: 60%;
+}
+
+#lp_nine {
+    top: 0;
+    left: 80%;
+}
+
+#lp_ten {
+    bottom: 0;
+    left: 80%;
+}
+
+#landingPageContainer {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#lp_welcomeText {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'nameFont';
+    line-height: 16vw;
+    letter-spacing: 0vw;
+    font-size: 30.4vw;
+    position: absolute;
+    align-self: center;
+    color: white;
+    margin-top: 10vw;
+    width: calc(100% - 25vw);
+    padding-left: 15vw;
+    white-space: nowrap;
+    transition: opacity 2s ease;
+    -webkit-transition: opacity 2s ease;
+    -moz-transition: opacity 2s ease;
+    -ms-transition: opacity 2s ease;
+    -o-transition: opacity 2s ease;
+}
+
+#lp_mainTitle {
+    transition: all 1s;
+    font-family: 'code';
+    letter-spacing: normal;
+    width: auto;
+    justify-content: right;
+    display: flex;
+    font-size: 2vw;
+    margin-right: 6vw;
+    color: white;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform: translate(1000px);
+    -webkit-transform: translate(1000px);
+    -moz-transform: translate(1000px);
+    -ms-transform: translate(1000px);
+    -o-transform: translate(1000px);
+}
+
+@media only screen and (max-width: 600px) {
+    #lp_mainTitle {
+        line-height: 130px;
+        font-size: 4vw;
+        margin-right: 6vw;
+    }
+
+    #lp_welcomeText {
+
+        margin-top: 0vw;
+
+    }
+
+
+}
