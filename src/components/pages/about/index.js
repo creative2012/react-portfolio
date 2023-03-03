@@ -28,7 +28,7 @@ class About extends Component {
       ap_picture.style.backgroundImage = `url("${images[1]}")`;
       ap_picture.style.transitionDuration = '0.2s';
 
-    }, 1550);
+    }, 2000);
     //add event listeners to hover over profile image
     ap_picture.addEventListener("mouseover", this.changeImage, false);
     ap_picture.addEventListener("mouseout", this.changeImageBack, false);
@@ -90,12 +90,12 @@ class About extends Component {
   }
   isScrolledIntoView() {
     let ap_skillsContainer = document.getElementById('skillsContainer');
-    var rect = ap_skillsContainer.getBoundingClientRect();
-    var elemTop = rect.top;
-    var elemBottom = rect.bottom;
+    let rect = ap_skillsContainer.getBoundingClientRect();
+    let elemTop = rect.top;
+    let elemBottom = rect.bottom;
 
     // Only completely visible elements return true:
-    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    let isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
     // Partially visible elements return true:
     //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
     return isVisible;
@@ -108,7 +108,7 @@ class About extends Component {
           <motion.div id="aboutText"
             initial={{ x: 500 + 'px', opacity: 0 }}
             animate={{ x: 0 + 'px', opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.1, delay: 0.8, ease: "easeOut" }}
             exit={{ x: 500 + 'px', opacity: 0, transition: { duration: 0.5, delay: 0 } }}>
 
             <h1>Its all about me...</h1>
