@@ -224,6 +224,7 @@
     #projectsPageContainer {
         bottom: -20px;
         overflow: scroll;
+        opacity: 0;
     }
 
     #pp_one,

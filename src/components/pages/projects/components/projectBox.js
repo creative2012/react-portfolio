@@ -28,9 +28,9 @@ class  ProjectBox extends Component {
         return (
         
             <motion.div  className="project" key={this.props.id} id={this.props.id}
-            initial={{width: 0}}
-            animate={window.innerWidth < 901 ? {width: 100 + '%'}: {width: 50 + '%'}}
-            transition={{ delay: 0.5, duration: 0, ease: "linear"}}
+            initial={{width: 0, opacity: 0}}
+            animate={window.innerWidth < 901 ? {width: 100 + '%', opacity: 1}: {width: 50 + '%', opacity: 1}}
+            transition={{ delay: 0.5, duration: 0.2, ease: "linear"}}
             exit={window.innerWidth < 901 ? {width: 0, opacity: 0, transition:{duration: 0.5}}:{width: 0, opacity: 0, transition:{duration: 0.5}}} >
                 <div className="pp_description">
                     <a href={this.props.url} target="_new">
