@@ -71,7 +71,7 @@ class About extends Component {
           <motion.div id="aboutText"
             initial={{ x: 500 + 'px', opacity: 0 }}
             animate={{ x: 0 + 'px', opacity: 1 }}
-            transition={{ duration: 1, delay: 1, ease: "anticipate" }}
+            transition={{ duration: 1, delay: 0.6, ease: "anticipate" }}
             exit={{ x: 500 + 'px', opacity: 0, transition: { duration: 0.5, delay: 0 } }}>
 
             <h1>Its all about me...</h1>
@@ -99,7 +99,7 @@ class About extends Component {
         <motion.div id="aboutImage"
           initial={{ x: -800 + 'px', opacity: 0 }}
           animate={{ x: 0 + 'px', opacity: 1 }}
-          transition={{ duration: .7, delay: 1, ease: "anticipate" }}
+          transition={{ duration: .7, delay: 0.6, ease: "anticipate" }}
           exit={{ x: -1000 + 'px', opacity: 0, transition: { duration: 0.5, delay: 0 } }}
         ></motion.div >
       </div>
