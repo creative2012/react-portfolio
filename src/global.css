@@ -159,3 +159,6 @@ nav ul li:hover {
   right: 30px;
   bottom: 23px;
 }
+.active{
+  font-weight: bold;
+}
