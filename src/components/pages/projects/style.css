@@ -25,7 +25,7 @@
     width: 0;
     /* 0-p */
     height: 30%;
-    transition: all 0.5s ease;
+    
     background-color: rgb(100, 100, 100);
 }
 .pp_description a{
