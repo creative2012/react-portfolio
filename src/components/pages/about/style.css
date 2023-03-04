@@ -26,18 +26,11 @@
 #aboutText {
     margin: auto 0;
     align-self: center;
-    font-size: 25px;
+    font-size: 20px;
 
     width: 80%;
     opacity: 0;
-    transition-property: opacity, transform;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-    transform: translate(1000px);
-    -webkit-transform: translate(1000px);
-    -moz-transform: translate(1000px);
-    -ms-transform: translate(1000px);
-    -o-transform: translate(1000px);
+    
 
 }
 
@@ -57,14 +50,7 @@
     background-repeat: no-repeat;
     background-color: rgb(247, 247, 247);
     opacity: 0;
-    transition-property: opacity, background-image, transform;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-    transform: translate(-1000px);
-    -webkit-transform: translate(-1000px);
-    -moz-transform: translate(-1000px);
-    -ms-transform: translate(-1000px);
-    -o-transform: translate(-1000px);
+
     border-radius: 400px;
     cursor: pointer;
     -webkit-border-radius: 400px;

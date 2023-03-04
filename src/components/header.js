@@ -8,7 +8,7 @@ function Header(props) {
       <nav style={props.style}>
       
       <NavLink
-              to="/react-portfolio"
+              to="/react-portfolio/"
               end
               className={({ isActive }) =>
                 isActive ? 'nav-link active' : 'nav-link'
@@ -18,9 +18,9 @@ function Header(props) {
             </NavLink>
  
         <ul>
-          <li id="projects">
+          <li id="/react-portfolio/projects">
           <NavLink
-            to="/projects"
+            to="/react-portfolio/projects"
             end
             className={({ isActive }) =>
               isActive ? 'nav-link active' : 'nav-link'
@@ -31,7 +31,7 @@ function Header(props) {
           </li>
           <li id="current">
           <NavLink
-            to="/contact"
+            to="/react-portfolio/contact"
             end
             className={({ isActive }) =>
               isActive ? 'nav-link active' : 'nav-link'
@@ -42,7 +42,7 @@ function Header(props) {
           </li>
           <li id="about">
           <NavLink
-              to="/about"
+              to="/react-portfolio/about"
               end
               className={({ isActive }) =>
                 isActive ? 'nav-link active' : 'nav-link'

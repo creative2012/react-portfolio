@@ -161,4 +161,5 @@ nav ul li:hover {
 }
 .active{
   font-weight: bold;
+  color:var(--main-orange)
 }

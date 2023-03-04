@@ -29,7 +29,7 @@ class About extends Component {
       ap_picture.style.backgroundImage = `url("${images[1]}")`;
       ap_picture.style.transitionDuration = '0.2s';
 
-    }, 2000);
+    }, 1800);
     //add event listeners to hover over profile image
     ap_picture.addEventListener("mouseover", this.changeImage, false);
     ap_picture.addEventListener("mouseout", this.changeImageBack, false);
@@ -70,7 +70,7 @@ class About extends Component {
           <motion.div id="aboutText"
             initial={{ x: 500 + 'px', opacity: 0 }}
             animate={{ x: 0 + 'px', opacity: 1 }}
-            transition={{ duration: 0.1, delay: 1, ease: "anticipate" }}
+            transition={{ duration: 1, delay: 1, ease: "anticipate" }}
             exit={{ x: 500 + 'px', opacity: 0, transition: { duration: 0.5, delay: 0 } }}>
 
             <h1>Its all about me...</h1>
@@ -86,19 +86,19 @@ class About extends Component {
               and drive... I must also give a huge thank you to the skills for life Edx team for helping to hone my
               skills.
             </p>
-
-
             <p> Based in Staffordshire UK,
               I plan to delve deeper and deeper into the world of
-              design and programming, to bring <b>fresh interfaces</b>
+              design and programming, to bring <b>fresh interfaces </b>
               and <b>engaging experiances</b> to the world... While scoffing a cheesy oatcake!</p>
+
+              <p>Besides my front end skills in JS, React, Vue and an assortment of different packages for each, I have <b>also spent alot of time coding in PHP and working with MySql databases.</b></p>
             <Skills />
           </motion.div>
         </div>
         <motion.div id="aboutImage"
           initial={{ x: -800 + 'px', opacity: 0 }}
           animate={{ x: 0 + 'px', opacity: 1}}
-          transition={{ duration: 0.5, delay: 1, ease: "anticipate" }}
+          transition={{ duration: .7, delay: 1, ease: "anticipate" }}
           exit={{ x: -1000 + 'px', opacity: 0, transition: { duration: 0.5, delay: 0 } }}
         ></motion.div >
       </div>
