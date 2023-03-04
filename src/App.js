@@ -24,7 +24,7 @@ class App extends Component {
 
     let location = this.getBaseUrl()
     //check if user has loaded first time into the landing page - if so play delayed fade animation for nav and footer
-    if(window.location.href == location){
+    if(window.location.href === location){
     setTimeout(() => {
       Object.keys(navAndFooterIn).forEach(key => {
         this.setState({

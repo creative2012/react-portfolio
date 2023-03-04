@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header(props) {
 
@@ -8,7 +8,7 @@ function Header(props) {
       <nav style={props.style}>
       
       <NavLink
-              to="/"
+              to="/react-portfolio"
               end
               className={({ isActive }) =>
                 isActive ? 'nav-link active' : 'nav-link'

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { motion, AnimatePresence } from "framer-motion";
+import { motion} from "framer-motion";
 import image1 from './images/main_funnyFace.png';
 import image2 from './images/mainPic.png';
 import image3 from './images/slide_bgImage.png';
@@ -108,7 +108,7 @@ class About extends Component {
           <motion.div id="aboutText"
             initial={{ x: 500 + 'px', opacity: 0 }}
             animate={{ x: 0 + 'px', opacity: 1 }}
-            transition={{ duration: 0.1, delay: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.1, delay: 1, ease: "anticipate" }}
             exit={{ x: 500 + 'px', opacity: 0, transition: { duration: 0.5, delay: 0 } }}>
 
             <h1>Its all about me...</h1>
@@ -152,7 +152,7 @@ class About extends Component {
         <motion.div id="aboutImage"
           initial={{ x: -1000 + 'px', opacity: 0 }}
           animate={{ x: 0 + 'px', opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.5, delay: 1, ease: "anticipate" }}
           exit={{ x: -1000 + 'px', opacity: 0, transition: { duration: 0.5, delay: 0 } }}
         ></motion.div >
       </div>

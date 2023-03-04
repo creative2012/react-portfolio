@@ -8,9 +8,9 @@ function AnimatedRoutes() {
     const location = useLocation();
 
   return (
-    <AnimatePresence>
+    <AnimatePresence intial={false}>
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<LandingPage/>} />
+            <Route path="react-portfolio" element={<LandingPage/>} />
             <Route path="about" element={<About/>} />
           </Routes>
     </AnimatePresence>
