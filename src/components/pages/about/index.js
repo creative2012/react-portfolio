@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 import image1 from './images/main_funnyFace.png';
 import image2 from './images/mainPic.png';
 import image3 from './images/slide_bgImage.png';
@@ -40,7 +40,7 @@ class About extends Component {
     let ap_picture = document.getElementById('aboutImage');
     ap_picture.style.backgroundImage = `url("${images[0]}")`;
   }
-  changeImageBack(image) {
+  changeImageBack() {
     let ap_picture = document.getElementById('aboutImage');
     ap_picture.style.backgroundImage = `url("${images[1]}")`;
     ap_picture.style.transform = "translate(0) perspective(550px) rotateY(0) rotateX(0)";
@@ -61,7 +61,8 @@ class About extends Component {
     ap_picture.addEventListener("mouseout", this.changeImageBack, false);
     ap_picture.addEventListener("mousemove", this.rotate, false);
   }
-  
+
+
 
   render() {
     return (
@@ -91,13 +92,13 @@ class About extends Component {
               design and programming, to bring <b>fresh interfaces </b>
               and <b>engaging experiances</b> to the world... While scoffing a cheesy oatcake!</p>
 
-              <p>Besides my front end skills in JS, React, Vue and an assortment of different packages for each, I have <b>also spent alot of time coding in PHP and working with MySql databases.</b></p>
+            <p>Besides my front end skills in JS, React, Vue and an assortment of different packages for each, I have <b>also spent alot of time coding in PHP and working with MySql databases.</b></p>
             <Skills />
           </motion.div>
         </div>
         <motion.div id="aboutImage"
           initial={{ x: -800 + 'px', opacity: 0 }}
-          animate={{ x: 0 + 'px', opacity: 1}}
+          animate={{ x: 0 + 'px', opacity: 1 }}
           transition={{ duration: .7, delay: 1, ease: "anticipate" }}
           exit={{ x: -1000 + 'px', opacity: 0, transition: { duration: 0.5, delay: 0 } }}
         ></motion.div >
