@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.0b12e3e5.css",
-    "main.js": "/react-portfolio/static/js/main.e3d3edb8.js",
+    "main.css": "/react-portfolio/static/css/main.f1ddaa40.css",
+    "main.js": "/react-portfolio/static/js/main.0681a55b.js",
     "static/media/portfolio.png": "/react-portfolio/static/media/portfolio.d270c571f735e6d2bbc1.png",
     "static/media/dateLounge.png": "/react-portfolio/static/media/dateLounge.16f4ef11b5f548fe18ee.png",
     "static/media/slide_bgImage.png": "/react-portfolio/static/media/slide_bgImage.17ed1fe769674a146ab7.png",
@@ -16,11 +16,11 @@
     "static/media/Code7X5Regular-ypBe.ttf": "/react-portfolio/static/media/Code7X5Regular-ypBe.cd31d7dcd21af86b921a.ttf",
     "index.html": "/react-portfolio/index.html",
     "static/media/header_logo.svg": "/react-portfolio/static/media/header_logo.9f21fd94eac9338f7b16.svg",
-    "main.0b12e3e5.css.map": "/react-portfolio/static/css/main.0b12e3e5.css.map",
-    "main.e3d3edb8.js.map": "/react-portfolio/static/js/main.e3d3edb8.js.map"
+    "main.f1ddaa40.css.map": "/react-portfolio/static/css/main.f1ddaa40.css.map",
+    "main.0681a55b.js.map": "/react-portfolio/static/js/main.0681a55b.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b12e3e5.css",
-    "static/js/main.e3d3edb8.js"
+    "static/css/main.f1ddaa40.css",
+    "static/js/main.0681a55b.js"
   ]
 }
