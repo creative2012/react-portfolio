@@ -16,11 +16,13 @@ class  ProjectBox extends Component {
             for (let i = 0; i < cusid_ele.length; ++i) {
                 let item = cusid_ele[i];  
                 item.style.width = '100%';
+                item.style.opacity= 1;
             } 
         } else {
             for (let i = 0; i < cusid_ele.length; ++i) {
                 let item = cusid_ele[i];  
                 item.style.width = '50%';
+                item.style.opacity= 1;
             } 
         }
     }
