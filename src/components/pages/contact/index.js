@@ -12,7 +12,7 @@ function Contact() {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [loadings, setLoadings] = useState([]);
-
+    //loading spinner for contact form
     const enterLoading = (index) => {
         setLoadings((prevLoadings) => {
             const newLoadings = [...prevLoadings];
@@ -32,15 +32,15 @@ function Contact() {
     const downloadCV = () => {
         window.open(CV);
     }
-
+    //shows modal
     const showModal = () => {
         setIsModalOpen(true);
     };
-
+    //closes modal
     const handleOk = () => {
         setIsModalOpen(false);
     };
-
+    //closes modal
     const handleCancel = () => {
         setIsModalOpen(false);
     };

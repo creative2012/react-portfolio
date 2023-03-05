@@ -13,7 +13,7 @@ class App extends Component {
     }
   };
 
-
+  //load in ui
   componentDidMount() {
     let navAndFooterIn = {
       navAndFooterStyle: {
@@ -44,7 +44,7 @@ class App extends Component {
     }
 
   };
-
+  //check base url
   getBaseUrl() {
     var re = new RegExp(/^.*\//);
     return re.exec(window.location.href);

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { motion} from "framer-motion";
 const cusid_ele = document.getElementsByClassName('project');
 class  ProjectBox extends Component {
-    
+    //listener to check screen size
     componentDidMount(){
         window.addEventListener("resize", this.resize, false)
         
@@ -10,6 +10,7 @@ class  ProjectBox extends Component {
     componentWillUnmount(){
         window.removeEventListener("resize", this.resize, false)
     }
+    //resize 100% if mobile, only 50% if desktop
     resize(){
         if(window.innerWidth < 901){
             

@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './global.css';
 
+//ensure correct sizing on iphone if resized
 window.addEventListener("resize", onResize);
-
 function onResize() {
 
         this.height = window.innerHeight - 30;

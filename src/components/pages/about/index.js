@@ -36,15 +36,18 @@ class About extends Component {
     ap_picture.addEventListener("mousemove", this.rotate, false);
 
   }
+  //change main pic on hover
   changeImage() {
     let ap_picture = document.getElementById('aboutImage');
     ap_picture.style.backgroundImage = `url("${images[0]}")`;
   }
+  //change main pic back to origonal when not hovering over it
   changeImageBack() {
     let ap_picture = document.getElementById('aboutImage');
     ap_picture.style.backgroundImage = `url("${images[1]}")`;
     ap_picture.style.transform = "translate(0) perspective(550px) rotateY(0) rotateX(0)";
   }
+  //rotate main picture on hover
   rotate(event) {
     let ap_picture = document.getElementById('aboutImage');
     let midpoint = window.innerWidth / 2;

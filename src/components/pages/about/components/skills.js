@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 class Skills extends Component {
+    //check when skills section is in view
     componentDidMount() {
         let ap_pageContainer = document.getElementById('aboutPageContainer');
         let ap_scroll = document.getElementById('scroll');
@@ -19,6 +20,7 @@ class Skills extends Component {
 
         };
     }
+    //if skills section is in view, transition elements in
     scrollFunction() {
 
         let buttonTimer = 500;
@@ -38,9 +40,9 @@ class Skills extends Component {
         let elemBottom = rect.bottom;
 
         // Only completely visible elements return true:
-        let isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+        // let isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
         // Partially visible elements return true:
-        //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+        let isVisible = elemTop < window.innerHeight && elemBottom >= 0;
         return isVisible;
     }
     render() {

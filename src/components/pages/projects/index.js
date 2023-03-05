@@ -10,7 +10,7 @@ import placeHolder from './images/matrix.jpg';
 import './style.css';
 
 function Projects() {
-
+    //array of projects with details
     const projects = [
         {
             id: "pp_one",
