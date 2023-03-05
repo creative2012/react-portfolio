@@ -11,10 +11,12 @@ The Following images shows the main landing page of my portfolio
 ![applicaton mock up](./public/images/potfolio.png)
 
 ## Technologys
-<img height="50" style="margin-right: 20px" src="./public/images/react_button_icon_151947.png"/>
-<img height="50" style="margin-right: 20px" src="./public/images/motion.png"/>
-<img height="50" style="margin-right: 20px" src="./public/images/router.png"/>
-<img height="50" src="./public/images/antd.png"/>
+React                          |   Framer Motion       |   React Router        |   Ant Design  
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+<img height="50" style="margin-right: 20px" src="./public/images/react_button_icon_151947.png"/> |  <img height="50" style="margin-right: 20px" src="./public/images/motion.png"/> | <img height="50" style="margin-right: 20px" src="./public/images/router.png"/> | <img height="50" src="./public/images/antd.png"/>
+
+
+
 
 
 
