@@ -58,7 +58,7 @@ function Contact() {
         <motion.div
             initial={{ opacity: 0, bottom: 0 }}
             animate={{ opacity: 1, bottom: 20 + 'px' }}
-            exit={{ opacity: 0, bottom: -1000, scale: 0.2, transition: { delay: 0, duration: 0.2 } }}
+            exit={{ opacity: 0, bottom: 0, transition: { delay: 0, duration: 0.2 } }}
             transition={{ delay: 0.8, ease: "linear" }}
             key="cc" id="contactPageContainer">
             <div id="contactCard">

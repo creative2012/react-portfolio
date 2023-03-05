@@ -3,10 +3,19 @@
     justify-content: center;
     align-items: center;
     position: fixed;
+    height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    background: 
+      radial-gradient(farthest-side at -33.33% 50%,#0000 52%,#737070 54% 57%,#0000 59%) 0 calc(128px/2),
+      radial-gradient(farthest-side at 50% 133.33%,#0000 52%,#737070 54% 57%,#0000 59%) calc(128px/2) 0,
+      radial-gradient(farthest-side at 133.33% 50%,#0000 52%,#737070 54% 57%,#0000 59%),
+      radial-gradient(farthest-side at 50% -33.33%,#0000 52%,#737070 54% 57%,#0000 59%),
+      #656565;
+background-size: calc(128px/4.667) 128px,128px calc(128px/4.667);
+
 }
 
 #contactCard {
@@ -26,6 +35,7 @@
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
     margin: 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 #cardLogo {

@@ -18,6 +18,9 @@ body {
   background-color: var(--main-dark);
   height: 100vh;
 }
+#root{
+  overflow: hidden;
+}
 
 @font-face {
   font-family: "nameFont";

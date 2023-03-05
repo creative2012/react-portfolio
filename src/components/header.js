@@ -29,6 +29,16 @@ function Header(props) {
             Projects
           </NavLink>
           </li>
+          <li id="about">
+          <NavLink
+              to="/react-portfolio/about"
+              end
+              className={({ isActive }) =>
+                isActive ? 'nav-link active' : 'nav-link'
+              }
+            >
+              About
+            </NavLink></li>
           <li id="current">
           <NavLink
             to="/react-portfolio/contact"
@@ -40,16 +50,6 @@ function Header(props) {
             Contact
           </NavLink>
           </li>
-          <li id="about">
-          <NavLink
-              to="/react-portfolio/about"
-              end
-              className={({ isActive }) =>
-                isActive ? 'nav-link active' : 'nav-link'
-              }
-            >
-              About
-            </NavLink></li>
         </ul>
       </nav>
    
