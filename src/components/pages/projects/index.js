@@ -10,6 +10,7 @@ import placeHolder from './images/matrix.jpg';
 import './style.css';
 
 function Projects() {
+    let t = 0.4;
     //array of projects with details
     const projects = [
         {
@@ -138,8 +139,12 @@ function Projects() {
     return (
 
         <div id="projectsPageContainer">
-            {projects.map((project, i) => {
+            {
+            projects.map((project, i) => {
+                if(i % 2 === 0) t = t += 0.1;
+                
                 return (<ProjectBox
+                    timer={t}
                     key={i}
                     id={project.id}
                     url={project.url}
