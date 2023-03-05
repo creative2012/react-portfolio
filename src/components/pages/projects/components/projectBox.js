@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { motion} from "framer-motion";
+import { Button, Modal, Space, Form, Input } from 'antd';
+import { DownloadOutlined, ContactsOutlined } from '@ant-design/icons';
 const cusid_ele = document.getElementsByClassName('project');
+
 class  ProjectBox extends Component {
     //listener to check screen size
     componentDidMount(){

@@ -17,10 +17,12 @@ class About extends Component {
 
   componentDidMount() {
     //preload images
+    
     for (const image of images) {
       const imageElement = new Image();
       imageElement.src = image;
     }
+      
     //set [profile pic inital image
     let ap_picture = document.getElementById('aboutImage');
     ap_picture.style.backgroundImage = `url("${images[2]}")`;
@@ -36,6 +38,7 @@ class About extends Component {
     ap_picture.addEventListener("mousemove", this.rotate, false);
 
   }
+  
   //change main pic on hover
   changeImage() {
     let ap_picture = document.getElementById('aboutImage');
