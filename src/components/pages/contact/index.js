@@ -19,7 +19,7 @@ function Contact() {
             newLoadings[index] = true;
             return newLoadings;
         });
-
+        
         setTimeout(() => {
             setLoadings((prevLoadings) => {
                 const newLoadings = [...prevLoadings];
