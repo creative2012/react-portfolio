@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import { Button, Modal, Space, Form, Input } from 'antd';
 import { DownloadOutlined, ContactsOutlined } from '@ant-design/icons';
@@ -10,10 +10,28 @@ const { TextArea } = Input;
 
 function Contact() {
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [loadings, setLoadings] = useState([]);
+
+    const enterLoading = (index) => {
+        setLoadings((prevLoadings) => {
+            const newLoadings = [...prevLoadings];
+            newLoadings[index] = true;
+            return newLoadings;
+        });
+
+        setTimeout(() => {
+            setLoadings((prevLoadings) => {
+                const newLoadings = [...prevLoadings];
+                newLoadings[index] = false;
+                handleOk();
+                return newLoadings;
+            });
+        }, 2000);
+    };
     const downloadCV = () => {
         window.open(CV);
     }
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const showModal = () => {
         setIsModalOpen(true);
@@ -46,7 +64,6 @@ function Contact() {
             <div id="contactCard">
                 <div id="cardLogo" style={{ backgroundImage: `url("${image}")` }}></div>
                 <div id="cardText">
-
                     <div id="cc-name">Paul Morris<div>Front End Developer</div></div>
                     <div id="cc-contact-btns">
                         <Space wrap>
@@ -72,9 +89,9 @@ function Contact() {
                     onOk={handleOk}
                     onCancel={handleCancel}
                     centered
-                    width={100 + '%'}
+                    width={600}
                     footer={[
-                        
+
                     ]}>
                     <Form
                         {...formItemLayout}
@@ -85,19 +102,21 @@ function Contact() {
                         style={{ maxWidth: 600 }}
                     >
                         <Form.Item label="Name">
-                            <Input placeholder="input placeholder" />
+                            <Input placeholder="Who are you..." />
                         </Form.Item>
                         <Form.Item label="Email">
-                            <Input placeholder="input placeholder" />
+                            <Input placeholder="Where can I email you back..." />
                         </Form.Item>
                         <Form.Item label="Number">
-                            <Input placeholder="input placeholder" />
+                            <Input placeholder="Can I call you..." />
                         </Form.Item>
                         <Form.Item label="Message">
                             <TextArea rows={4} />
                         </Form.Item>
                         <Form.Item {...buttonItemLayout}>
-                            <Button type="primary">Submit</Button>
+                            <Button loading={loadings[1]}
+                                onClick={() => enterLoading(1)}
+                                type="primary">Submit</Button>
                         </Form.Item>
                     </Form>
                 </Modal>
