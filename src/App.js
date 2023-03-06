@@ -53,7 +53,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <Router >
         <Header style={this.state.navAndFooterStyle} />
         <AnimatedRoutes />
         <Footer style={this.state.navAndFooterStyle} />

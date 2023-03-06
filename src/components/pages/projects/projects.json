@@ -9,7 +9,10 @@
                     "sp devicon-javascript-plain colored",
                     "sp devicon-css3-plain-wordmark colored"
                 ],
-            "backgroundImage": "url('./images/aritasn.jpg')"
+            "backgroundImage": "url('./images/aritasn.jpg')",
+            "details":{
+                "test": "hello"
+            }
         },
         {
             "id": "pp_two",

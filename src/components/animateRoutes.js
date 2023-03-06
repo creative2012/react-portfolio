@@ -11,7 +11,7 @@ function AnimatedRoutes() {
     const location = useLocation();
 
   return (
-    <AnimatePresence intial={false}>
+    <AnimatePresence>
           <Routes location={location} key={location.pathname}>
             <Route path="react-portfolio" element={<LandingPage/>} />
             <Route path="/react-portfolio/about" element={<About/>} />

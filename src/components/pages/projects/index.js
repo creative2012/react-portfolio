@@ -24,36 +24,6 @@ function Projects() {
                     backgroundImage={{ backgroundImage: `${project.backgroundImage}` }}
                 />)
             })}
-            <div id="pp_seven">
-                <div className="pp_description">
-                    <h1>coming Soon</h1>
-                    <p></p>
-                </div>
-                <div className="pp_image"></div>
-            </div>
-            <div id="pp_eight">
-
-                <div className="pp_image"></div>
-                <div className="pp_description">
-                    <h1>coming Soon</h1>
-                    <p></p>
-                </div>
-            </div>
-            <div id="pp_nine">
-                <div className="pp_description">
-                    <h1>coming Soon</h1>
-                    <p></p>
-                </div>
-                <div className="pp_image"></div>
-            </div>
-            <div id="pp_ten">
-
-                <div className="pp_image"></div>
-                <div className="pp_description">
-                    <h1>coming Soon</h1>
-                    <p></p>
-                </div>
-            </div>
         </div>
     )
 

@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { motion} from "framer-motion";
-import { Button, Modal, Space, Form, Input } from 'antd';
-import { DownloadOutlined, ContactsOutlined } from '@ant-design/icons';
 const cusid_ele = document.getElementsByClassName('project');
 
 class  ProjectBox extends Component {
     //listener to check screen size
     componentDidMount(){
-        window.addEventListener("resize", this.resize, false)
-        console.log(this.props.link)
-        
+        window.addEventListener("resize", this.resize, false)        
     }
     componentWillUnmount(){
         window.removeEventListener("resize", this.resize, false)
@@ -40,9 +36,12 @@ class  ProjectBox extends Component {
             initial={{width: 0, opacity: 0}}
             animate={window.innerWidth < 901 ? {width: 100 + '%', opacity: 1}: {width: 50 + '%', opacity: 1}}
             transition={{ delay: this.props.timer, duration: 0.2, ease: "linear"}}
-            exit={window.innerWidth < 901 ? {width: 0, opacity: 0, transition:{duration: 0.5}}:{width: 0, opacity: 0, transition:{duration: 0.5}}} >
+            exit={window.innerWidth < 901 ? {width: 0, opacity: 0, transition:{duration: 0.5}}:{width: 0, opacity: 0, transition:{duration: 0.5}}}>
                 <div className="pp_description">
-                    <Link to={this.props.link} state={{ title: this.props.title }}>
+                    <Link to={this.props.link} 
+                    state={{ 
+                        id: this.props.id,
+                        }}>
                     
                         <h1>{this.props.title} </h1>
                         <p>{this.props.description} </p>
