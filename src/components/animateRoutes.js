@@ -5,6 +5,7 @@ import LandingPage from './pages/landingPage';
 import About from './pages/about';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
+import ProjectDetail from './pages/projects/components/projectDetail';
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -17,6 +18,7 @@ function AnimatedRoutes() {
             <Route path="/react-portfolio/contact" element={<Contact/>} />
             <Route path="/react-portfolio/projects" element={<Projects/>} />
             <Route path="*" element={<LandingPage/>}/>
+            <Route path="/react-portfolio/projects/*" element={<ProjectDetail/>}/>
           </Routes>
     </AnimatePresence>
   )

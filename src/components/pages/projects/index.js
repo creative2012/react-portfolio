@@ -17,7 +17,7 @@ function Projects() {
                     timer={t}
                     key={i}
                     id={project.id}
-                    url={project.url}
+                    link={project.link}
                     title={project.title}
                     description={project.description}
                     skills={project.skills}

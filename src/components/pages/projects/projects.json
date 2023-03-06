@@ -1,7 +1,7 @@
 [
         {
             "id": "pp_one",
-            "url": "https://github.com/creative2012/css-artisan",
+            "link": "css-artisan/",
             "title": "CSS Artisan",
             "description": "A free resource.",
             "skills":
@@ -13,7 +13,7 @@
         },
         {
             "id": "pp_two",
-            "url": "#",
+            "link": "dateLounge/",
             "title": "The Date Lounge",
             "description": "A Dating Platform.",
             "skills":
@@ -26,7 +26,7 @@
         },
         {
             "id": "pp_three",
-            "url": "https://github.com/creative2012/Professional-README-Generator",
+            "link": "Professional-README-Generator/",
             "title": "Readme Generator",
             "description": "NodeJs command line App",
             "skills":
@@ -37,7 +37,7 @@
         },
         {
             "id": "pp_four",
-            "url": "https://github.com/creative2012/weather-dashboard",
+            "link": "weather-dashboard/",
             "title": "Weather App",
             "description": "5 day forcast App using openweather API",
             "skills":
@@ -50,7 +50,7 @@
         },
         {
             "id": "pp_five",
-            "url": "https://github.com/creative2012/BlackJack",
+            "link": "BlackJack/",
             "title": "Black Jack",
             "description": "Simple Browser Game",
             "skills":
@@ -63,7 +63,7 @@
         },
         {
             "id": "pp_six",
-            "url": "https://github.com/creative2012/Bootstrap-Portfolio",
+            "link": "Bootstrap-Portfolio/",
             "title": "1st Portfolio",
             "description": "Made during my time at Edx bootcamp",
             "skills":
@@ -76,7 +76,7 @@
         },
         {
             "id": "pp_seven",
-            "url": "",
+            "link": "",
             "title": "Comming Soon",
             "description": "",
             "skills":
@@ -87,7 +87,7 @@
         },
         {
             "id": "pp_eight",
-            "url": "",
+            "link": "",
             "title": "Comming Soon",
             "description": "",
             "skills":
@@ -98,7 +98,7 @@
         },
         {
             "id": "pp_nine",
-           "url": "",
+           "link": "",
             "title": "Comming Soon",
             "description": "",
             "skills":
@@ -109,7 +109,7 @@
         },
         {
             "id": "pp_ten",
-            "url": "",
+            "link": "",
             "title": "Comming Soon",
             "description": "",
             "skills":

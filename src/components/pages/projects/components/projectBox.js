@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { motion} from "framer-motion";
 import { Button, Modal, Space, Form, Input } from 'antd';
 import { DownloadOutlined, ContactsOutlined } from '@ant-design/icons';
@@ -8,6 +9,7 @@ class  ProjectBox extends Component {
     //listener to check screen size
     componentDidMount(){
         window.addEventListener("resize", this.resize, false)
+        console.log(this.props.link)
         
     }
     componentWillUnmount(){
@@ -30,6 +32,7 @@ class  ProjectBox extends Component {
             } 
         }
     }
+    
     render(){
         return (
         
@@ -39,14 +42,15 @@ class  ProjectBox extends Component {
             transition={{ delay: this.props.timer, duration: 0.2, ease: "linear"}}
             exit={window.innerWidth < 901 ? {width: 0, opacity: 0, transition:{duration: 0.5}}:{width: 0, opacity: 0, transition:{duration: 0.5}}} >
                 <div className="pp_description">
-                    <a href={this.props.url} target="_new">
+                    <Link to={this.props.link} state={{ title: this.props.title }}>
+                    
                         <h1>{this.props.title} </h1>
                         <p>{this.props.description} </p>
                         <p>{this.props.skills.map((skillClass, i) =>{
                             return (<i key={i} className={skillClass}></i>)
                         }) } 
                         </p>
-                    </a>
+                        </Link>
                 </div>
                 <div className="pp_image" style={this.props.backgroundImage}></div>
             </motion.div >
