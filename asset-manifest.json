@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.5794f937.css",
-    "main.js": "/react-portfolio/static/js/main.676adabc.js",
+    "main.js": "/react-portfolio/static/js/main.5e7b06e0.js",
     "static/media/mainPic.png": "/react-portfolio/static/media/mainPic.19be31d33415228bd00f.png",
     "static/media/slide_bgImage.png": "/react-portfolio/static/media/slide_bgImage.9c3ffb6b7d4389fdf56d.png",
     "static/media/main_funnyFace.png": "/react-portfolio/static/media/main_funnyFace.26b21e8ccad80cf1f32d.png",
     "static/media/Shalytta-8MY0B.ttf": "/react-portfolio/static/media/Shalytta-8MY0B.793f997080c30c72e892.ttf",
-    "static/media/paulMorrisCV.doc": "/react-portfolio/static/media/paulMorrisCV.b75159d578e02d4e8291.doc",
+    "static/media/Paul_Morris_CV.pdf": "/react-portfolio/static/media/Paul_Morris_CV.a3d21cf6f6adfb4be99f.pdf",
     "static/media/Code7X5Regular-ypBe.ttf": "/react-portfolio/static/media/Code7X5Regular-ypBe.cd31d7dcd21af86b921a.ttf",
     "index.html": "/react-portfolio/index.html",
     "static/media/cardLogo.svg": "/react-portfolio/static/media/cardLogo.228a83063d893c8c7c5e40beb8e09985.svg",
     "static/media/header_logo.svg": "/react-portfolio/static/media/header_logo.9f21fd94eac9338f7b16.svg",
     "main.5794f937.css.map": "/react-portfolio/static/css/main.5794f937.css.map",
-    "main.676adabc.js.map": "/react-portfolio/static/js/main.676adabc.js.map"
+    "main.5e7b06e0.js.map": "/react-portfolio/static/js/main.5e7b06e0.js.map"
   },
   "entrypoints": [
     "static/css/main.5794f937.css",
-    "static/js/main.676adabc.js"
+    "static/js/main.5e7b06e0.js"
   ]
 }
