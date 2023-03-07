@@ -1,7 +1,7 @@
 #projectsPageContainer,
 #projectDetailsPageContainer,
 #backgroundBlur {
-    overflow: hidden;
+    overflow: scroll;
     display:flex;
     position: fixed;
     top: 0;
@@ -11,6 +11,7 @@
 
 }
 #projectDetailsPageContainer {
+    overflow: hidden;
     background-position: center;
     background-size: cover;
     
