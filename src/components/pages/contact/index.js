@@ -4,7 +4,7 @@ import { Button, Modal, Space, Form, Input } from 'antd';
 import { DownloadOutlined, ContactsOutlined } from '@ant-design/icons';
 import './style.css';
 import image from './images/cardLogo.svg';
-import CV from './paulMorrisCV.doc';
+import CV from './Paul_Morris_CV.pdf';
 
 const { TextArea } = Input;
 
