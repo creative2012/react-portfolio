@@ -29,7 +29,9 @@ function ProjectDetail(props) {
             animate={{opacity: 1}}
             transition={{ delay: 0.5, duration: 0.2, ease: "linear"}}
             exit={{opacity: 0, transition:{duration: 0.5}}}>
-            <div id="backgroundBlur"></div>
+            <div id="backgroundBlur">
+                {project.title} <div> Case Study</div>
+            </div>
 
         </motion.div>
     )
