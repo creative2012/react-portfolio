@@ -1,11 +1,26 @@
-#projectsPageContainer {
-    overflow: scroll;
+#projectsPageContainer,
+#projectDetailsPageContainer,
+#backgroundBlur {
+    overflow: hidden;
     display:flex;
     position: fixed;
     top: 0;
     bottom: -30px;
     left: 0;
     right: 0;
+
+}
+#projectDetailsPageContainer {
+    background-position: center;
+    background-size: cover;
+    
+
+}
+#backgroundBlur{
+    overflow: auto;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0, 0.4);
+    z-index: 1;
 
 }
 #pp_one,

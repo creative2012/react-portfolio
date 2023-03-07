@@ -5,7 +5,7 @@ import LandingPage from './pages/landingPage';
 import About from './pages/about';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
-import ProjectDetail from './pages/projects/components/projectDetail';
+import ProjectDetail from './pages/projects/projectDetail';
 
 function AnimatedRoutes() {
     const location = useLocation();

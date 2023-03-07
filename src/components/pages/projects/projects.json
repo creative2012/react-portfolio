@@ -11,7 +11,7 @@
                 ],
             "backgroundImage": "url('./images/aritasn.jpg')",
             "details":{
-                "test": "hello"
+                "image": "url('../../images/aritasn.jpg')"
             }
         },
         {
@@ -25,7 +25,10 @@
                     "sp devicon-react-original-wordmark colored",
                     "sp devicon-photoshop-plain colored"
                 ],
-            "backgroundImage": "url('./images/dateLounge.png')"
+            "backgroundImage": "url('./images/dateLounge.png')",
+            "details":{
+                "image": "url('../../images/dateLounge.png')"
+            }
         },
         {
             "id": "pp_three",
@@ -37,6 +40,10 @@
                     "sp devicon-nodejs-plain colored"
                 ],
             "backgroundImage": "url('./images/readme.png')"
+            ,
+            "details":{
+                "image": "url('../../images/readme.png')"
+            }
         },
         {
             "id": "pp_four",
@@ -49,7 +56,10 @@
                     "sp devicon-css3-plain-wordmark colored",
                     "sp devicon-jquery-plain-wordmark colored"
                 ],
-            "backgroundImage": "url('./images/weatherapp.png')"
+            "backgroundImage": "url('./images/weatherapp.png')",
+            "details":{
+                "image": "url('../../images/weatherapp.png')"
+            }
         },
         {
             "id": "pp_five",
@@ -62,7 +72,10 @@
                     "sp devicon-css3-plain-wordmark colored",
                     "sp devicon-javascript-plain colored"
                 ],
-            "backgroundImage": "url('./images/blackJack.png')"
+            "backgroundImage": "url('./images/blackJack.png')",
+            "details":{
+                "image": "url('../../images/blackJack.png')"
+            }
         },
         {
             "id": "pp_six",
@@ -75,7 +88,10 @@
                     "sp devicon-css3-plain-wordmark colored",
                     "sp devicon-bootstrap-plain-wordmark colored"
                 ],
-            "backgroundImage": "url('./images/portfolio.png')"
+            "backgroundImage": "url('./images/portfolio.png')",
+            "details":{
+                "image": "url('../../images/portfolio.png')"
+            }
         },
         {
             "id": "pp_seven",
@@ -86,7 +102,10 @@
                 [
                     
                 ],
-            "backgroundImage": "url('./images/matrix.jpg')"
+            "backgroundImage": "url('./images/matrix.jpg')",
+            "details":{
+                "image": "url('../../images/matrix.jpg')"
+            }
         },
         {
             "id": "pp_eight",
@@ -97,7 +116,10 @@
                 [
                     
                 ],
-            "backgroundImage": "url('./images/matrix.jpg')"
+            "backgroundImage": "url('./images/matrix.jpg')",
+            "details":{
+                "image": "url('../../images/matrix.jpg')"
+            }
         },
         {
             "id": "pp_nine",
@@ -108,7 +130,10 @@
                 [
                     
                 ],
-            "backgroundImage": "url('./images/matrix.jpg')"
+            "backgroundImage": "url('./images/matrix.jpg')",
+            "details":{
+                "image": "url('../../images/matrix.jpg')"
+            }
         },
         {
             "id": "pp_ten",
@@ -119,6 +144,9 @@
                 [
                     
                 ],
-            "backgroundImage": "url('./images/matrix.jpg')"
+            "backgroundImage": "url('./images/matrix.jpg')",
+            "details":{
+                "image": "url('../../images/matrix.jpg')"
+            }
         }
     ]
